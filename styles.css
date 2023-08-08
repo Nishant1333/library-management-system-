@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #00FFFF, #800080);
+  background-size: 200% 100%;
+  animation: gradientAnimation 5s linear infinite;
+   /* Vibrant pink color for the body background */
+}
+.logo{
+    max-height: 100px;
+    padding: 12px;
+    filter: drop-shadow(8px 8px 8px green);
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #ff3366; /* Vibrant pink color for the heading */
+  margin-bottom: 20px;
+  filter: drop-shadow(8px 8px 8px yellow);
+}
+
+.add-book-form {
+  background-color: #ffd699; /* Vibrant yellow color for the form background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-gap: 10px;
+}
+
+.add-book-form h2,
+.book-list h2 {
+  margin-bottom: 10px;
+  color: #ff3366; /* Vibrant pink color for the section headings */
+}
+
+input[type="text"],
+input[type="number"],
+button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5; /* Light gray color for input and button backgrounds */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+button:focus {
+  outline: none;
+  background-color: #f0f0f0; /* Lighter gray color when focused */
+}
+
+button {
+  background-color: #ff6699; /* Vibrant pink color for buttons */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff3366; /* Darker vibrant pink color on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.book-list li {
+  background-color: #ffcc99; /* Vibrant orange color for book entries */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-list li button {
+  margin-left: 10px;
+  background-color: #ff3366; /* Vibrant pink color for buttons in book entries */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.book-list li button:last-child {
+  background-color: #ff9933; /* Vibrant orange color for the "Remove" button */
+}
+
+.book-list li button:hover {
+  background-color: #ff0033; /* Darker vibrant pink color on hover for buttons */
+}
+
+.book-list li button:last-child:hover {
+  background-color: #ff8000; /* Darker vibrant orange color on hover for "Remove" button */
+}
+
+#search {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5; /* Light gray color for the search input background */
+  width: 100%;
+}
+
+#total-books {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
